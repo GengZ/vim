@@ -2,8 +2,10 @@
 
 Config a .vimrc file for python
 
+
 **ADD MXNET SUPPORT SNIPPETS**
 
+Added snippets support include:
 conv
 deconv
 lrelu
