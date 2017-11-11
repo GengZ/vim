@@ -1,5 +1,11 @@
 # vim
 
-.vimrc file
+Config a .vimrc file for python
 
-YCM & ctags need manually processed
+**NOTE:**
+* YCM & ctags need manually processed
+* mxnet functions failed to work
+
+**TODO:**
+* Add mxnet functions to snipMate
+
