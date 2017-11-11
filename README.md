@@ -3,6 +3,7 @@
 Config a .vimrc file for python
 
 **ADD MXNET SUPPORT SNIPPETS**
+
 conv
 deconv
 lrelu
