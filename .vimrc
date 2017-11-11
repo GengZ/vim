@@ -37,10 +37,16 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 
 "-------------------=== Snippets support ===--------------------
-Plugin 'garbas/vim-snipmate'                " Snippets manager
-Plugin 'MarcWeber/vim-addon-mw-utils'       " dependencies #1
-Plugin 'tomtom/tlib_vim'                    " dependencies #2
-Plugin 'honza/vim-snippets'                 " snippets repo
+" Plugin 'garbas/vim-snipmate'                " Snippets manager
+" Plugin 'MarcWeber/vim-addon-mw-utils'       " dependencies #1
+" Plugin 'tomtom/tlib_vim'                    " dependencies #2
+" Plugin 'honza/vim-snippets'                 " snippets repo
+
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
 
 "-------------------=== Other ===-------------------------------
 Plugin 'bling/vim-airline'                  " Lean & mean status/tabline for vim
@@ -62,7 +68,7 @@ filetype plugin indent on    " required
 " split setting
 set splitbelow
 set splitright
-nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
@@ -219,8 +225,12 @@ let g:ctrlp_prompt_mappings = {
 """ SnipMate settings
 "=====================================================
 "let g:snippets_dir='~/.vim/vim-snippets/snippets'
-imap <C-n> <Plug>snipMateNextOrTrigger
-smap <C-n> <Plug>snipMateNextOrTrigger
+" imap <C-j> <Plug>snipMateNextOrTrigger
+" smap <C-j> <Plug>snipMateNextOrTrigger
+" ----------------------------------------------------
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<C-j>"
 
 "=====================================================
 """ AirLine settings
