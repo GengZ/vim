@@ -53,6 +53,11 @@ Plugin 'bling/vim-airline'                  " Lean & mean status/tabline for vim
 Plugin 'vim-airline/vim-airline-themes'     " Themes for airline
 Plugin 'Lokaltog/powerline'                 " Powerline fonts plugin
 Plugin 'flazz/vim-colorschemes'             " Colorschemes
+Plugin 'chriskempson/base16-vim'	    " dont know what is this
+"Plugin 'nightsense/forgotten'
+Plugin 'beigebrucewayne/Turtles'
+"Plugin 'reewr/vim-monokai-phoenix'
+Plugin 'lifepillar/vim-cheat40'
 
 "=====================================================
 
@@ -83,7 +88,6 @@ let g:SimpylFold_docstring_preview = 1
 
 " other general
 set nu			" set line number
-colorscheme molokai 	" colorscheme
 set encoding=utf-8	" utf-8
 syntax enable		" syntax highlight
 set t_Co=256		" set 256 colors
@@ -252,3 +256,9 @@ let g:tagbar_autofocus=0
 let g:tagbar_width=35
 autocmd BufEnter *.py :call tagbar#autoopen(0)
 autocmd BufWinLeave *.py :TagbarClose
+
+"=====================================================
+""" colorscheme settings
+"=====================================================
+let base16colorspace=256
+colorscheme smyck
